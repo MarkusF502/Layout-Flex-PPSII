@@ -3,33 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&family=Satisfy&display=swap" rel="stylesheet">
     <title>Atividade Layout Flex</title>
+
+    <style>
+
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            column-gap: 10px;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+
+        main{
+            background-color: beige;
+            display: flex;                   
+            justify-content: space-between;  
+            align-items: center;             
+            padding: 2% 8%;
+            gap: 20px;
+        }
+        
+        h2{
+            font-size: 2rem;
+        }
+       
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        main img{
+            
+        }
+
+        header, footer{
+            background-color: #000;
+            flex-basis:100%;
+            height: 6vh; 
+            padding: 2vh;
+            display: flex;
+            color: #fff;
+            
+        }
+
+        footer{
+            justify-content: center;
+        }
+
+        header ul{
+            display:flex;
+            list-style: none;
+            column-gap: 20px;
+            float: right;
+        }
+
+        header ul a{
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        section{
+
+            display: flex;
+            flex-wrap: wrap;                
+            gap: 2vw;                       
+        }
+
+        section>div{
+            display: flex;
+            gap: 2vw;                       
+            justify-content: center;        
+            flex-wrap: wrap;                 
+        }
+        div>div{
+            text-align: center;
+            flex: 1 1 30%;                  
+            max-width: 30%;
+            margin-bottom: 5%;
+        }
+
+        section>H2{
+            margin-left: 5%;
+        }
+
+        button{
+            background-color: orangered;
+            color: #fff;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+
 </head>
 <body>
-    <header> 
-        <h1> Lorem Club </h1>
+    <header>
+        <h1>Lorem Club</h1> 
         <nav>
-            <ul> 
+            <ul>
                 <li> Serviços </li>
                 <li> Notícias </li>
                 <li> Sobre nós </li>
-            </ul>
+             </ul>
         </nav>
     </header>
-<section><h2>Lorem ipsum</h2>
-    <img src="https://placehold.co/600x250" alt="imagem placeholder">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quis earum iste quam nam, expedita repellendus eligendi, illum aperiam perferendis, veritatis dolor distinctio voluptatum iure alias soluta tempora laudantium est!</p>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis consequatur iusto rem delectus aliquam commodi ducimus ipsa libero, eaque sequi necessitatibus veniam pariatur voluptates velit voluptatibus natus dicta, non incidunt.</p>
 
-<button>Lorem Ipsum</button>
-</section>
-<section>
-    <h2>Lorem ipsum</h2>
-    
-</section>
+    <main> 
+        <div>
+            <h2> Notícia 1 </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et pariatur totam debitis odit quibusdam reprehenderit quasi quo repellat aperiam, vero, architecto facere laborum porro voluptatum exercitationem aspernatur ipsam illum soluta. </p>
+            <p>        
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rerum optio magnam repellat rem odio reiciendis nulla. Eos quo quibusdam, tempora itaque, voluptatum ipsum facilis, quas obcaecati iure earum magni.
+            </p>
+            <button> Acesse aqui </button>
+        </div>
+        <img src="https://placehold.co/600x250" alt="imagem placeholder">
+    </main>
+
+    <section>
+     <h2>Dolor sit amet</h2>
+     <div>
+     <div>
+        <img src="https://placehold.co/450x250" alt="imagem placeholder">
+        <h3> Notícia 1 </h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus aliquid ratione, natus inventore numquam minima consectetur vel non ea, pariatur atque praesentium autem voluptas unde in, tempore at veniam quod?</p>
+        <button>Acessa aí</button>
+     </div>
+     <div>
+        <img src="https://placehold.co/450x250" alt="imagem placeholder">
+        <h3> Notícia 2 </h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus aliquid ratione, natus inventore numquam minima consectetur vel non ea, pariatur atque praesentium autem voluptas unde in, tempore at veniam quod?</p>
+        <button>Acessa aí</button>
+     </div>
+     <div>
+        <img src="https://placehold.co/450x250" alt="imagem placeholder">
+        <h3> Notícia 3 </h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus aliquid ratione, natus inventore numquam minima consectetur vel non ea, pariatur atque praesentium autem voluptas unde in, tempore at veniam quod?</p>
+        <button>Acessa aí</button>
+     </div>
+    </div>
+    </section>
+
+    <footer> 
+        Feito por Kauê de Oliveira Martins e Marcos F. Marinho | Todos os direitos reservados | Exerecício proposto para a disciplina PPSI-II | 30 de Outubro de 2024
+    </footer>
 </body>
 </html>
